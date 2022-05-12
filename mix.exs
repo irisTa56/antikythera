@@ -97,7 +97,7 @@ defmodule Antikythera.Mixfile do
       {:poison, "2.2.0"},
       {:jason, "1.2.2"},
       {:gettext, "0.17.1"},
-      {:croma, "0.10.2"},
+      {:croma, "0.11.2"},
       {:pbkdf2, "2.0.0"},
 
       # tools
