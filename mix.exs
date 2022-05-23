@@ -100,7 +100,7 @@ defmodule Antikythera.Mixfile do
       {:croma,
        [
          git: "git@github.com:irisTa56/croma.git",
-         ref: "e0cbb6a562514f2304cb0787908494aa365c4a3b",
+         ref: "1ce46f1d81969925ece7ca122e22f3b17d2994e4",
          override: true
        ]},
       {:pbkdf2, "2.0.0"},
