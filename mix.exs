@@ -97,7 +97,12 @@ defmodule Antikythera.Mixfile do
       {:poison, "2.2.0"},
       {:jason, "1.2.2"},
       {:gettext, "0.17.1"},
-      {:croma, "0.10.2"},
+      {:croma,
+       [
+         git: "git@github.com:irisTa56/croma.git",
+         ref: "92dbd984ccf35a219931495ff95767f96502008b",
+         override: true
+       ]},
       {:pbkdf2, "2.0.0"},
 
       # tools

@@ -270,7 +270,7 @@ defmodule Antikythera.GearProject do
           app:              gear_name(),
           version:          Antikythera.MixCommon.version_with_last_commit_info(version()),
           elixirc_paths:    ["lib", "web"],
-          compilers:        [:ensure_gear_dependencies, :gettext, :propagate_file_modifications] ++ Mix.compilers() ++ [:gear_static_analysis] ++ @antikythera_instance_compilers,
+          compilers:        [:ensure_gear_dependencies, :gettext, :propagate_file_modifications] ++ Enum.map(Mix.compilers(), &(if &1 == :elixir, do: :croma, else: &1)) ++ [:gear_static_analysis] ++ @antikythera_instance_compilers,
           start_permanent:  false,
           deps:             deps(),
           docs:             [output: "exdoc"],
